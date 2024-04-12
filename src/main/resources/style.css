@@ -1,0 +1,53 @@
+#start-button {
+    -fx-font: 20px "Arial";
+    -fx-background-color: #294B94;
+    -fx-text-fill: white;
+    -fx-start-margin: 30px;
+}
+
+#start-button:hover {
+    -fx-background-color: #C21619;
+    -fx-pref-width: 180;
+    -fx-font-size: 22px;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#label {
+    -fx-font: 16px "Arial";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#name-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #294B94;
+    -fx-font: 16px "Arial";
+    -fx-alignment: center;
+}
+
+#name-field:focused {
+    -fx-border-width: 0 0 4 0;
+}
+
+#player-label {
+    -fx-font: 18px "Arial";
+    -fx-font-style: italic;
+}
+
+#score-label {
+    -fx-font: 22px "Arial";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#exit-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+#playgrid-button {
+    -fx-background-color: #FFFFFF;
+}

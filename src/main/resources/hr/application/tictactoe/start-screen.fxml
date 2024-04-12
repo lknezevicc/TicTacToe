@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" spacing="20.0" style="-fx-background-color: #f8f8f8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.application.tictactoe.StartController">
+   <children>
+      <ImageView fitHeight="140.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/logo.png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="120.0" prefWidth="100.0">
+         <children>
+            <Label id="label" text="Pick your player" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="250.0">
+               <children>
+                  <ImageView fx:id="playerX" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/playerX.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="playerO" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/playerO.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </VBox>
+      <Label id="label" text="Enter a name">
+         <VBox.margin>
+            <Insets bottom="-10.0" />
+         </VBox.margin></Label>
+      <TextField id="name-field" fx:id="playerName" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="60.0" />
+         </VBox.margin></TextField>
+      <Button id="start-button" mnemonicParsing="false" onAction="#onStartButtonClicked" prefHeight="60.0" prefWidth="160.0" text="START GAME" wrapText="true" />
+   </children>
+   <padding>
+      <Insets top="15.0" />
+   </padding>
+</VBox>
